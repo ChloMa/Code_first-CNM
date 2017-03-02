@@ -1,8 +1,15 @@
 body { padding-top: 70px; }
 
+#title {
+min-height 600px;
+background-image:url('...');
+background-size: cover;
+background-attachment: fixed;
+}
+
 .introduction {
 min-height: 600px;
-background-image: url('images/fruit-and-veg.jpg');
+background-image: url('...');
 background-size: cover;
 background-attachment: fixed;
 }
