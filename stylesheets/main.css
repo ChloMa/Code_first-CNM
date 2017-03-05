@@ -6,20 +6,21 @@ padding-right:5px;
 padding-bottom:5px;
 }
 
-
 #title {
 min-height: 700px;
 background-image: url('../images/parliament_night.jpg');
 background-size: cover;
 background-attachment: fixed;
+color: #D3D3D3;
 }
-
 
 #mission {
   min-height: 700px;
   background-image: url('../images/queen_elizabeth.jpg');
   background-size: cover;
   background-attachment: fixed;
+  color: black;
+  text-align: center;
   }
 
 #fun {
