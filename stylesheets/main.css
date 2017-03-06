@@ -1,9 +1,24 @@
 body {
 background-image: url('../images/white_wall.jpg');
+background-size: 50%;
 padding-top: 55px;
 padding-left:5px;
 padding-right:5px;
 padding-bottom:5px;
+}
+
+p {
+line-height: 28px;
+padding: 10px 10px 10px 10px;
+text-align: center;
+background-color: rgba(255,255,255,0.8)
+}
+
+.aims {
+  line-height: 28px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.8)  
 }
 
 #title {
@@ -21,28 +36,28 @@ color: #D3D3D3;
   background-attachment: fixed;
   color: black;
   text-align: center;
-  }
+}
 
 #fun {
   min-height: 700px;
   background-image: url('...');
   background-size: cover;
   background-attachment: fixed;
-  }
+}
 
 #games {
   min-height: 700px;
   background-color: #f28f48;
   background-size: cover;
   background-attachment: fixed;
-  }
+}
 
 #final  {
   min-height: 700px;
   background-image: url('../images/theresa_may_waving.jpg');
   background-size: cover;
   background-attachment: fixed;
-  }
+}
 
 #social-buttons {
   padding: 15px 30px 10px 10px;
