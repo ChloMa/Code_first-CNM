@@ -14,13 +14,6 @@ text-align: center;
 background-color: rgba(255,255,255,0.8)
 }
 
-.aims {
-  line-height: 28px;
-  padding: 10px 10px 10px 10px;
-  text-align: center;
-  background-color: rgba(255,255,255,0.8)  
-}
-
 #title {
 min-height: 700px;
 background-image: url('../images/parliament_night.jpg');
