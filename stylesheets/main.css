@@ -24,7 +24,7 @@ color: #D3D3D3;
 
 #mission {
   min-height: 700px;
-  background-image: url('../images/queen_elizabeth.jpg');
+  background-color: white;
   background-size: cover;
   background-attachment: fixed;
   color: black;
