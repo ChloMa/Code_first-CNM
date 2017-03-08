@@ -19,8 +19,9 @@ font-family: Lucida Console;
 min-height: 700px;
 background-image: url('../images/kids.jpg');
 background-size: cover;
-color: #D3D3D3;
 background-attachment: fixed;
+text-align: center;
+color:#D3D3D3;
 }
 
 #mission {
@@ -28,7 +29,6 @@ margin-top: 10px;
 min-height: 700px;
 background-size: cover;
 background-attachment: fixed;
-color: black;
 text-align: center;
 }
 
@@ -43,7 +43,6 @@ text-align: center;
 #games {
 margin-top: 10px;
 min-height: 700px;
-background-color: #f28f48;
 background-size: cover;
 background-attachment: fixed;
 }
