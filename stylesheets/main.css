@@ -19,6 +19,7 @@ min-height: 700px;
 background-image: url('../parliament_night.jpg');
 background-size: cover;
 color: #D3D3D3;
+background-attachment: fixed;
 }
 
 #mission {
