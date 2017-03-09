@@ -150,55 +150,30 @@
 <script>
 $(function(){
 
-  var sillyWord = $('#silly-word'),
-      lastName = $('#last-name'),
-      illness = $('#illness'),
-      noun = $('#noun'),
+  var name = $('#name'),
       adjective = $('#adjective'),
-      adjective2 = $('#adjective-2'),
-      sillyWord2 = $('#silly-word-2'),
-      place = $('#place'),
-      number = $('#number'),
-      adjective3 = $('#adjective-3');
+      noun = $('#noun'),
+      activity = $('#activity'),
+      friend = $('#friend');
 
-  sillyWord.keyup(function(){
-    $('#silly-word-output').text(sillyWord.val());
-  })
-
-  lastName.keyup(function(){
-    $('#last-name-output').text(lastName.val());
-  })
-
-  illness.keyup(function(){
-    $('#illness-output').text(illness.val());
-  })
-
-  noun.keyup(function(){
-    $('#noun-output').text(noun.val());
+  name.keyup(function(){
+    $('#name-output').text(name.val());
   })
 
   adjective.keyup(function(){
     $('#adjective-output').text(adjective.val());
   })
 
-  adjective2.keyup(function(){
-    $('#adjective-2-output').text(adjective2.val());
+  noun.keyup(function(){
+    $('#noun').text(noun.val());
   })
 
-  sillyWord2.keyup(function(){
-    $('#silly-word-2-output').text(sillyWord2.val());
+  activity.keyup(function(){
+    $('#activity').text(activity.val());
   })
 
-  place.keyup(function(){
-    $('#place-output').text(place.val());
-  })
-
-  number.keyup(function(){
-    $('#number-output').text(number.val());
-  })
-
-  adjective3.keyup(function(){
-    $('#adjective-3-output').text(adjective3.val());
+  friend.keyup(function(){
+    $('#friend-output').text(friend.val());
   })
 
   $('button').on('click', function(){
