@@ -23,7 +23,6 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-<script src="js/script.js" type="text/javascript"></script>
 
   </head>
 
@@ -124,39 +123,85 @@
 <div id="games" class='text-center'>
   <div class='container'>
     <h2><small>Games</small><br />The politician game</h2>
+<div class="madlib-wrapper">
 
-Politician Name: <input type="text" id="name">
-Adjective: <input type="text" name="adjective" id="adjective">
-Favourite Activity: <input type="text" name="activity" id="activity">
-Friend: <input type="text" name="friend" id="friend">
-<button id="launch">Launch</button>
+  <div class="input-container">
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="adjective" placeholder="Adjective" />
+    <input type="text" id="noun" placeholder="Noun" />
+    <input type="text" id="noun" placeholder="Noun (Plural)" />
+    <input type="text" id="activity" placeholder="Activity" />
+    <input type="text" id="friend" placeholder="Friend" />
+    <button id="madlib-toggle">Madlib It!</button>
+  </div>
 
-<div id="story"></div>
+  <p class="madlib-output">
+  There once was a politician called <span id="name-output">.</span>
+  They were very <span id="adjective-output"></span> because of their <span id="noun-output">.</span>
+  On weekends they liked to <span id="activity-output"></span> with their friend <span id="friend-output">.</span>
+  </p>
+</div>
 <script>
-window.onload = function () {
-var name = document.querySelector("#name");
-var adjective = document.querySelector("#adjective");
-var activity = document.querySelector("#activity");
-var noun = document.querySelector("#noun");
-var friend = document.querySelector("#friend");
-var story = document.querySelector("#story")
-var launch = document.querySelector("#launch");
-launch.addEventListener("click", writeStory, false);
+$(function(){
 
-function writeStory(){
-var launchedStory = "";
-launchedStory += "<p>There once was a politician called," + name.value + ".</p>";
-launchedStory += "<p>They were very " + adjective.value ;
-launchedStory += "because of their " + noun.value ".</p>";
-launchedStory += "<p>On weekends they liked to " + activity.value + " with their friend";
-launchedStory += + friend.value ".</p>";
+  var sillyWord = $('#silly-word'),
+      lastName = $('#last-name'),
+      illness = $('#illness'),
+      noun = $('#noun'),
+      adjective = $('#adjective'),
+      adjective2 = $('#adjective-2'),
+      sillyWord2 = $('#silly-word-2'),
+      place = $('#place'),
+      number = $('#number'),
+      adjective3 = $('#adjective-3');
 
-story.innerHTML = launchedStory;
-}
-}
+  sillyWord.keyup(function(){
+    $('#silly-word-output').text(sillyWord.val());
+  })
+
+  lastName.keyup(function(){
+    $('#last-name-output').text(lastName.val());
+  })
+
+  illness.keyup(function(){
+    $('#illness-output').text(illness.val());
+  })
+
+  noun.keyup(function(){
+    $('#noun-output').text(noun.val());
+  })
+
+  adjective.keyup(function(){
+    $('#adjective-output').text(adjective.val());
+  })
+
+  adjective2.keyup(function(){
+    $('#adjective-2-output').text(adjective2.val());
+  })
+
+  sillyWord2.keyup(function(){
+    $('#silly-word-2-output').text(sillyWord2.val());
+  })
+
+  place.keyup(function(){
+    $('#place-output').text(place.val());
+  })
+
+  number.keyup(function(){
+    $('#number-output').text(number.val());
+  })
+
+  adjective3.keyup(function(){
+    $('#adjective-3-output').text(adjective3.val());
+  })
+
+  $('button').on('click', function(){
+    $('.madlib-output').toggle('fast');
+  })
+
+})
 </script>
-
-    </div>
+</div>
 </div>
 
     <div id="final" class='text-center'>
@@ -188,5 +233,6 @@ story.innerHTML = launchedStory;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
